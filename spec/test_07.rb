@@ -10,10 +10,11 @@ describe Footman do
   end
 
   describe "#attack!" do
-    it "should do deal 10 (AP) damage to the enemy unit" do
+    it "should deal 10 (AP) damage to the enemy unit" do
       enemy = Footman.new
-      enemy.should_receive(:damage).with(10)
       @footman.attack!(enemy)
+      enemy.health_points.should eq(50)
+      
     end
   end
 

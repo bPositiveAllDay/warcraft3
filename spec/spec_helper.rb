@@ -1,6 +1,3 @@
-# Helper file to setup our tests/specs for this program.
-# NO NEED TO EDIT
-
 require 'pry'
 require 'rspec'
 
@@ -14,3 +11,4 @@ safely_require '../lib/unit'
 safely_require '../lib/footman'
 safely_require '../lib/barracks'
 safely_require '../lib/peasant'
+safely_require '../lib/siege_engine'
