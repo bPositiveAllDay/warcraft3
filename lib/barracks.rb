@@ -1,26 +1,21 @@
 class Barracks
 
-attr_accessor :gold, :food, :footman
+attr_accessor :gold, :food, :footman, :health_points, :lumber
 
   def initialize
     @gold = 1000
     @food = 80
-    # @footmen = []
+    @health_points = 500
+    @lumber = 500
   end
   
-  
-  # def enough_resources?
-  #   if ((@food >= 2) && (@gold >= 135))
-  #     return true
-  #   else 
-  #     false
-  #   end
-  # end
+  def damage(attack_power)
+    @health_points -= attack_power 
+  end
 
 
   def can_train_footman?
      food >= 2 && gold >= 135
-
   end      
   
   
